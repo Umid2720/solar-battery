@@ -22,7 +22,7 @@ import Youtube from '../assets/Icons/YoutubeIcon.vue';
             </div>
         </div>
         <ul class="flex gap-x-10">
-            <li class="hover:text-[#ff6500] duration-300"><router-link to="/home">Home</router-link></li>
+            <li class="hover:text-[#ff6500] duration-300"><router-link to="/">Home</router-link></li>
             <li class="hover:text-[#ff6500] duration-300"><router-link to="/company">Company</router-link></li>
             <li class="hover:text-[#ff6500] duration-300"><router-link to="/products">Products</router-link></li>
             <li class="hover:text-[#ff6500] duration-300"><router-link to="/company">Company</router-link></li>

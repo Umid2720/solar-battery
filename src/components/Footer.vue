@@ -64,7 +64,7 @@ import SendIcon from '../assets/Icons/SendIcon.vue';
                     <h4 class="text-xl mb-5">Need Help</h4>
                     <li>
                         <router-link class="hover:underline cursor-pointer hover:hover:text-[#ff6500] duration-300"
-                            to="/home">Home</router-link>
+                            to="/">Home</router-link>
                     </li>
                     <li>
                         <router-link class="hover:underline cursor-pointer hover:hover:text-[#ff6500] duration-300"
@@ -87,7 +87,7 @@ import SendIcon from '../assets/Icons/SendIcon.vue';
                     <h4 class="text-xl mb-5">Need Help</h4>
                     <li>
                         <router-link class="hover:underline cursor-pointer hover:hover:text-[#ff6500] duration-300"
-                            to="/home">Home</router-link>
+                            to="/">Home</router-link>
                     </li>
                     <li>
                         <router-link class="hover:underline cursor-pointer hover:hover:text-[#ff6500] duration-300"

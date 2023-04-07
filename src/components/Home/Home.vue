@@ -5,6 +5,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
+import Products from './Products.vue';
 
 const modules = ref([Navigation, Pagination, Mousewheel, Keyboard])
 </script>
@@ -17,6 +18,7 @@ const modules = ref([Navigation, Pagination, Mousewheel, Keyboard])
                     :alt="'img' + item + '.jpg'" />
             </swiper-slide>
         </swiper>
+        <products />
+        
     </div>
 </template>
-<style></style>
