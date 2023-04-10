@@ -24,11 +24,11 @@ import SendIcon from '../assets/Icons/SendIcon.vue';
                     necessitatibus, enim harum non unde similique voluptatum voluptatem consequuntur mollitia magni officiis
                     odit ipsa optio numquam?</p>
                 <div class="flex justify-center gap-x-5">
-                    <FacebookColorIcon class="cursor-pointer duration-500 rotate-icon" />
-                    <WhatsAppColorIcon class="cursor-pointer duration-500 rotate-icon" />
-                    <TwiitterColorIcon class="cursor-pointer duration-500 rotate-icon" />
-                    <YoutubeColorIcon class="cursor-pointer duration-500 rotate-icon" />
-                    <LinkedinColorIcon class="cursor-pointer duration-500 rotate-icon" />
+                    <FacebookColorIcon class="cursor-pointer duration-500 hover:animate-bounce" />
+                    <WhatsAppColorIcon class="cursor-pointer duration-500 hover:animate-bounce" />
+                    <TwiitterColorIcon class="cursor-pointer duration-500 hover:animate-bounce" />
+                    <YoutubeColorIcon class="cursor-pointer duration-500 hover:animate-bounce" />
+                    <LinkedinColorIcon class="cursor-pointer duration-500 hover:animate-bounce" />
                 </div>
             </div>
             <div class="container mx-auto flex justify-between">

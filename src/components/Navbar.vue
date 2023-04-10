@@ -14,11 +14,11 @@ import Youtube from '../assets/Icons/YoutubeIcon.vue';
                 <img src="../assets/images/logo.png" alt="logo">
             </div>
             <div class="flex gap-x-4">
-                <Facebook class="cursor-pointer duration-500 rotate-icon" />
-                <WhatsApp class="cursor-pointer duration-500 rotate-icon" />
-                <Twitter class="cursor-pointer duration-500 rotate-icon" />
-                <Youtube class="cursor-pointer duration-500 rotate-icon" />
-                <Linkedin class="cursor-pointer duration-500 rotate-icon" />
+                <Facebook class="cursor-pointer duration-500 hover:animate-bounce" />
+                <WhatsApp class="cursor-pointer duration-500 hover:animate-bounce" />
+                <Twitter class="cursor-pointer duration-500 hover:animate-bounce" />
+                <Youtube class="cursor-pointer duration-500 hover:animate-bounce" />
+                <Linkedin class="cursor-pointer duration-500 hover:animate-bounce" />
             </div>
         </div>
         <ul class="flex gap-x-10">
@@ -34,8 +34,4 @@ import Youtube from '../assets/Icons/YoutubeIcon.vue';
     </div>
 </template> 
 
-<style>
-.rotate-icon:hover {
-    transform: rotateY(180deg);
-}
-</style>
+<style></style>

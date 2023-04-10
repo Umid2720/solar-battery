@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
 import Products from './Products.vue';
+import Overview from './Overview.vue';
 
 const modules = ref([Navigation, Pagination, Mousewheel, Keyboard])
 </script>
@@ -19,6 +20,6 @@ const modules = ref([Navigation, Pagination, Mousewheel, Keyboard])
             </swiper-slide>
         </swiper>
         <products />
-        
+        <Overview />
     </div>
 </template>
