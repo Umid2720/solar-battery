@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
 import Products from './Products.vue';
 import Overview from './Overview.vue';
+import About from './About.vue';
 
 const modules = ref([Navigation, Pagination, Mousewheel, Keyboard])
 </script>
@@ -21,5 +22,6 @@ const modules = ref([Navigation, Pagination, Mousewheel, Keyboard])
         </swiper>
         <products />
         <Overview />
+        <About />
     </div>
 </template>
