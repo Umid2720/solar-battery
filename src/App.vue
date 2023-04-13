@@ -4,7 +4,7 @@ import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
-  <Navbar />
+  <Navbar class="sticky top-0 z-50 bg-white pb-1 shadow-xl"/>
   <router-view>
   </router-view>
   <Footer />

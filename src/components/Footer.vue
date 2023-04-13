@@ -10,6 +10,7 @@ import PhoneHomeIcon from '../assets/Icons/PhoneHomeIcon.vue';
 import PostIcon from '../assets/Icons/PostIcon.vue';
 import WorldIcon from '../assets/Icons/WorldIcon.vue';
 import SendIcon from '../assets/Icons/SendIcon.vue';
+import AnimationIcon from './AnimationIcon.vue';
 
 </script>
 
@@ -24,11 +25,21 @@ import SendIcon from '../assets/Icons/SendIcon.vue';
                     necessitatibus, enim harum non unde similique voluptatum voluptatem consequuntur mollitia magni officiis
                     odit ipsa optio numquam?</p>
                 <div class="flex justify-center gap-x-5">
-                    <FacebookColorIcon class="cursor-pointer duration-500 hover:animate-bounce" />
-                    <WhatsAppColorIcon class="cursor-pointer duration-500 hover:animate-bounce" />
-                    <TwiitterColorIcon class="cursor-pointer duration-500 hover:animate-bounce" />
-                    <YoutubeColorIcon class="cursor-pointer duration-500 hover:animate-bounce" />
-                    <LinkedinColorIcon class="cursor-pointer duration-500 hover:animate-bounce" />
+                    <AnimationIcon>
+                        <FacebookColorIcon class="cursor-pointer" />
+                    </AnimationIcon>
+                    <AnimationIcon>
+                        <WhatsAppColorIcon class="cursor-pointer" />
+                    </AnimationIcon>
+                    <AnimationIcon>
+                        <TwiitterColorIcon class="cursor-pointer" />
+                    </AnimationIcon>
+                    <AnimationIcon>
+                        <YoutubeColorIcon class="cursor-pointer" />
+                    </AnimationIcon>
+                    <AnimationIcon>
+                        <LinkedinColorIcon class="cursor-pointer" />
+                    </AnimationIcon>
                 </div>
             </div>
             <div class="container mx-auto flex justify-between">
@@ -111,11 +122,10 @@ import SendIcon from '../assets/Icons/SendIcon.vue';
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, accusantium!</p>
                     <input class="bg-slate-400 border-0 outline-0 rounded p-3 w-72 my-4 text-white placeholder-white"
                         placeholder="Your Email Address..." />
-                    <button class="block bg-[#ff6500] flex items-end gap-x-2 px-4 py-2 rounded-lg">Submit
-                        <SendIcon class="text-white"/>
-                    </button>
-                </div>
+                <button class="block bg-[#ff6500] flex items-end gap-x-2 px-4 py-2 rounded-lg">Submit
+                    <SendIcon class="text-white" />
+                </button>
             </div>
         </div>
     </div>
-</template>
+</div></template>

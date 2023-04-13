@@ -1,37 +1,47 @@
 <script setup>
+import Animation from './AnimationIcon.vue';
+import Twitter from '../assets/Icons/TwitterIcon.vue';
+import Youtube from '../assets/Icons/YoutubeIcon.vue';
+import WhatsApp from '../assets/Icons/WhatsAppIcon.vue';
 import Facebook from '../assets/Icons/FacebookIcon.vue';
 import Linkedin from '../assets/Icons/LinkedinIcon.vue';
-import Twitter from '../assets/Icons/TwitterIcon.vue';
-import WhatsApp from '../assets/Icons/WhatsAppIcon.vue';
-import Youtube from '../assets/Icons/YoutubeIcon.vue';
-
 </script>
 
 <template>
-    <div class="container mx-auto mb-5">
-        <div class="flex justify-between items-center">
-            <div class="my-6">
-                <img src="../assets/images/logo.png" alt="logo">
+    <div>
+        <div class="container mx-auto mb-5">
+            <div class="flex justify-between items-center">
+                <div class="my-6">
+                    <img src="../assets/images/logo.png" alt="logo">
+                </div>
+                <div class="flex gap-x-4">
+                    <Animation>
+                        <Facebook class="cursor-pointer" />
+                    </Animation>
+                    <Animation>
+                        <WhatsApp class="cursor-pointer" />
+                    </Animation>
+                    <Animation>
+                        <Twitter class="cursor-pointer" />
+                    </Animation>
+                    <Animation>
+                        <Youtube class="cursor-pointer" />
+                    </Animation>
+                    <Animation>
+                        <Linkedin class="cursor-pointer" />
+                    </Animation>
+                </div>
             </div>
-            <div class="flex gap-x-4">
-                <Facebook class="cursor-pointer duration-500 hover:animate-bounce" />
-                <WhatsApp class="cursor-pointer duration-500 hover:animate-bounce" />
-                <Twitter class="cursor-pointer duration-500 hover:animate-bounce" />
-                <Youtube class="cursor-pointer duration-500 hover:animate-bounce" />
-                <Linkedin class="cursor-pointer duration-500 hover:animate-bounce" />
-            </div>
+            <ul class="flex gap-x-10">
+                <li class="hover:text-[#ff6500] duration-300"><router-link to="/">Home</router-link></li>
+                <li class="hover:text-[#ff6500] duration-300"><router-link to="/company">Company</router-link></li>
+                <li class="hover:text-[#ff6500] duration-300"><router-link to="/products">Products</router-link></li>
+                <li class="hover:text-[#ff6500] duration-300"><router-link to="/company">Company</router-link></li>
+                <li class="hover:text-[#ff6500] duration-300"><router-link to="/projects">Projects</router-link></li>
+                <li class="hover:text-[#ff6500] duration-300"><router-link to="/news">News</router-link></li>
+                <li class="hover:text-[#ff6500] duration-300"><router-link to="/downloads">Downloads</router-link></li>
+                <li class="hover:text-[#ff6500] duration-300"><router-link to="/contact-us">Contact Us</router-link></li>
+            </ul>
         </div>
-        <ul class="flex gap-x-10">
-            <li class="hover:text-[#ff6500] duration-300"><router-link to="/">Home</router-link></li>
-            <li class="hover:text-[#ff6500] duration-300"><router-link to="/company">Company</router-link></li>
-            <li class="hover:text-[#ff6500] duration-300"><router-link to="/products">Products</router-link></li>
-            <li class="hover:text-[#ff6500] duration-300"><router-link to="/company">Company</router-link></li>
-            <li class="hover:text-[#ff6500] duration-300"><router-link to="/projects">Projects</router-link></li>
-            <li class="hover:text-[#ff6500] duration-300"><router-link to="/news">News</router-link></li>
-            <li class="hover:text-[#ff6500] duration-300"><router-link to="/downloads">Downloads</router-link></li>
-            <li class="hover:text-[#ff6500] duration-300"><router-link to="/contact-us">Contact Us</router-link></li>
-        </ul>
     </div>
 </template> 
-
-<style></style>
