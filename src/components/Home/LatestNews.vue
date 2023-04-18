@@ -1,8 +1,14 @@
 <script setup>
 import { ref } from 'vue';
 import NewsItem from './NewsItem.vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination } from 'swiper';
+
+const isShow1 = ref(true)
+const isShow2 = ref(false)
+const isShow3 = ref(false)
 const modules = ref([Navigation, Pagination])
 const boxImage = ref([
     {
@@ -25,22 +31,40 @@ const boxImage = ref([
 
 <template>
     <div>
-        <h2 class="text-center text-2xl">Latest News
-            <span class="bg-[#ff6500] block my-2 h-1 rounded mx-auto w-24"></span>
+    <h2 class="text-center text-2xl">Latest News
+        <span class="bg-[#ff6500] block my-2 h-1 rounded mx-auto w-24"></span>
         </h2>
         <p class="text-center text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eaque.</p>
         <div class="flex justify-center gap-x-36 my-8">
-            <router-link to="" class="text-slate-500 pb-2 hover:text-[#ff6500]">Company News</router-link>
-            <router-link to="" class="text-slate-500 pb-2 hover:text-[#ff6500]">Industry News</router-link>
-            <router-link to="" class="text-slate-500 pb-2 hover:text-[#ff6500]">Mission & Vission</router-link>
+            <router-link to="" @click="isShow1 = true, isShow2 = isShow3 = false"
+                class="text-slate-500 pb-2 hover:text-[#ff6500]"
+                :class="{ 'base-color border-b-4 border-[#ff6500]': isShow1 }">Company News</router-link>
+            <router-link to="" @click="isShow2 = true, isShow1 = isShow3 = false"
+                class="text-slate-500 pb-2 hover:text-[#ff6500]"
+                :class="{ 'base-color border-b-4 border-[#ff6500]': isShow2 }">Industry
+                News</router-link>
+            <router-link to="" @click="isShow3 = true, isShow1 = isShow2 = false"
+                class="text-slate-500 pb-2 hover:text-[#ff6500]"
+                :class="{ 'base-color border-b-4 border-[#ff6500]': isShow3 }">Mission &
+                Vission</router-link>
         </div>
-        <div class="bg-slate-300">
-            <swiper :slidesPerView="3" :pagination="{ clickable: true }" :modules="modules" :cssMode="true"
-                :navigation="true" class="mySwiper container">
+        <div class="container mx-auto">
+            <swiper v-if="isShow1" :slidesPerView="3" :modules="modules" class="mySwiper">
                 <swiper-slide v-for="(image, index) in boxImage" :key="index" class="h-96">
-                    <NewsItem :imgSource="index + 1" :date="image.data" :title="image.title" :text="image.text"
-                        class="w-96" />
+                    <NewsItem :imgSource="index + 1" :date="image.data" :title="image.title" :text="image.text" />
                 </swiper-slide>
+            </swiper>
+            <swiper v-if="isShow2" :slidesPerView="3" :modules="modules" class="mySwiper">
+                <swiper-slide v-for="(image, index) in boxImage" :key="index" class="h-96">
+                    <!-- <NewsItem :imgSource="index + 1" :date="image.data" :title="image.title" :text="image.text" /> -->
+                    {{ image }}
+                </swiper-slide>
+            </swiper>
+            <swiper v-if="isShow3" :slidesPerView="3" :modules="modules" class="mySwiper">
+                <!-- <swiper-slide v-for="(image, index) in boxImage" :key="index" class="h-96">
+                                                <NewsItem :imgSource="index + 1" :date="image.data" :title="image.title" :text="image.text" />
+                                            </swiper-slide> -->
+                men show 3 dan man!!!
             </swiper>
         </div>
     </div>

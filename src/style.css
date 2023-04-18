@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.base-color{
+    color: #ff6500;
+}
+
+.bg-base-color{
+    background-color: #ff6500;
+}

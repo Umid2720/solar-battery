@@ -5,8 +5,8 @@ defineProps(['imgSource', 'date', 'title', 'text'])
 </script>
 
 <template>
-    <div>
-        <div class="overflow-hidden w-[360px]">
+    <div class="max-w-[400px]">
+        <div class="overflow-hidden">
             <img :src="'src/assets/images/box-img' + imgSource + '.jpg'"
                 class="hover:scale-[1.1] cursor-pointer duration-300" alt="">
         </div>
